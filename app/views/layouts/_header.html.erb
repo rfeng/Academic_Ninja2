@@ -1,0 +1,22 @@
+<table>
+	<td>
+		<h2>
+			<% logo = image_tag('logo.png', 
+					:alt => "Academic Ninja",
+					:class => "round") %>
+			<%= link_to logo, root_path %><%= " | Academic Ninja" %>
+		</h2>
+	</td>
+
+	<td>
+		<div class="navigation round">
+			<ul>
+				<li><%= link_to "Home", root_path %></li>
+				<li><%= link_to "About", about_path %></li>
+				<li><%= link_to "Contact", contact_path %></li>
+			</ul>
+		</div>
+	</td>
+</table>
+
+

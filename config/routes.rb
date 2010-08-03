@@ -3,7 +3,16 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pages do |pages|
 	pages.resources :documents
   end
+
   map.resources :documents
+
+  map.resources :static_pages
+	map.root :controller => 'static_pages', :action => 'home'
+		root_path = '/'
+	map.about '/about', :controller => 'static_pages', :action => 'about'
+		about_path = '/about'
+	map.contact '/contact', :controller => 'static_pages', :action => 'contact'
+		contact_path = '/contact'
 
 #  map.root, :controller => 'pages', :action => 'show'
 #	root_path = '/'
