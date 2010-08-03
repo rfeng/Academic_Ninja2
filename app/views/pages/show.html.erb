@@ -21,6 +21,10 @@
 	<%= f.error_messages %>
 
 	<div class="field">
+		<%= f.label "Title (Optional)" %><br />
+		<%= f.text_field :doc_title %>
+	</div>
+	<div class="field">
 		<%= f.label "Upload An Example:" %>
 		<%= f.file_field :uploaded_data %>
 	</div>

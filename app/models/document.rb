@@ -8,4 +8,6 @@ class Document < ActiveRecord::Base
 
 	validates_as_attachment
 
+	validates_uniqueness_of :doc_title
+
 end

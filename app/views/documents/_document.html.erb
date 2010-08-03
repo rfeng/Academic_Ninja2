@@ -2,7 +2,15 @@
 	<h2>Examples</h2>
 
 	<% @page.documents.each do |doc| %>
-		<%= link_to doc.filename, doc.public_filename, :target => '_blank' %><br />
+
+		<% if (doc.doc_title == "") %>
+			<%= link_to doc.filename, doc.public_filename, 
+						:target => '_blank' %><br />
+		<% else %>
+			<%= link_to doc.doc_title, doc.public_filename, 
+						:target => '_blank' %><br />
+		<% end %>
+
 	<% end %>
 
 	<br />

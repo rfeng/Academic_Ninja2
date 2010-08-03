@@ -1,22 +1,20 @@
-<table>
-	<td>
-		<h2>
-			<% logo = image_tag('logo.png', 
-					:alt => "Academic Ninja",
-					:class => "round") %>
-			<%= link_to logo, root_path %><%= " | Academic Ninja" %>
-		</h2>
-	</td>
+<h2>
+	<% logo = image_tag('logo.png', 
+			:alt => "Academic Ninja",
+			:class => "round") %>
+	<%= link_to logo, root_path %><%= link_to " | Academic Ninja", root_path %>
+</h2>
 
-	<td>
-		<div class="navigation round">
-			<ul>
-				<li><%= link_to "Home", root_path %></li>
-				<li><%= link_to "About", about_path %></li>
-				<li><%= link_to "Contact", contact_path %></li>
-			</ul>
-		</div>
-	</td>
-</table>
-
-
+<ul id="menu_bar">
+	<li><%= link_to "Home", root_path %></li>
+	<li><%= link_to "Preview", preview_path %></li>
+	<li><%= link_to "Exposure", exposure_path %></li>
+	<li><%= link_to "Comprehension", comprehension_path %></li>
+	<li><%= link_to "Skills Development", skills_path %></li>
+	<li><%= link_to "Enrichment", enrichment_path %></li>
+	<li><%= link_to "Analysis", analysis_path %></li>
+	<li><%= link_to "Synthesis", synthesis_path %></li>
+	<li><%= link_to "Self-Assessment", self_assess_path %></li>
+	<li><%= link_to "Evaluation", evaluation_path %></li>
+	<li class="bar"><div class="left"></div></li>
+</ul>

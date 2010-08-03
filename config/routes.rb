@@ -3,6 +3,25 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pages do |pages|
 	pages.resources :documents
   end
+	map.preview '/preview', :controller => 'pages', :action => 'show', :id => '3'
+		preview_path = '/preview'
+	map.exposure '/exposure', :controller => 'pages', :action => 'show', :id => '4'
+		exposure_path = '/exposure'
+	map.comprehension '/comprehension', :controller => 'pages', :action => 'show', :id => '5'
+		comprehension_path = '/comprehension'
+	map.skills '/skills', :controller => 'pages', :action => 'show', :id => '6'
+		skills_path = '/skills'
+	map.enrichment '/enrichment', :controller => 'pages', :action => 'show', :id => '7'
+		enrichment_path = '/enrichment'
+	map.analysis '/analysis', :controller => 'pages', :action => 'show', :id => '9'
+		analysis_path = '/analysis'
+	map.synthesis '/synthesis', :controller => 'pages', :action => 'show', :id => '8'
+		synthesis_path = '/synthesis'
+	map.self_assess '/self_assess', :controller => 'pages', :action => 'show', :id => '10'
+		self_assess_path = '/self_assess'
+	map.evaluation '/evaluation', :controller => 'pages', :action => 'show', :id => '11'
+		evaluation_path = '/evaluation'
+	
 
   map.resources :documents
 

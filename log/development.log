@@ -7901,3 +7901,664 @@ Rendered layouts/_stylesheets (18.1ms)
 Rendered layouts/_header (9.0ms)
 Rendered layouts/_footer (3.8ms)
 Completed in 2372ms (View: 2143, DB: 22) | 200 OK [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 07:35:21) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (36.4ms)
+
+ActionView::TemplateError (undefined method `javascript_link_tag' for #<ActionView::Base:0xb6e56274>) on line #12 of app/views/layouts/_header.html.erb:
+9: 	</td>
+10: 
+11: 	<td>
+12: 		<%= javascript_link_tag 'menu', 'jquery-1.4.2' %>
+13: 		<ul id="menu">
+14: 			<li><%= link_to "Browse", "#" %>
+15: 				<ul class="active">
+
+    app/views/layouts/_header.html.erb:12
+    app/views/layouts/application.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (2413.8ms)
+Rendered rescues/_request_and_response (26.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 07:50:43) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (23.4ms)
+
+ActionView::TemplateError (undefined method `javascript_link_tag' for #<ActionView::Base:0xb6e6a440>) on line #11 of app/views/layouts/application.html.erb:
+8: 	<body>
+9: 		<div class="container">
+10: 			<div id="header" class="round">
+11: 				<%= javascript_link_tag 'menu', 'jquery-1.4.2' %>
+12: 				<%= render 'layouts/header.html.erb' %>
+13: 			</div>
+14: 			<div id="content" class="round">
+
+    app/views/layouts/application.html.erb:11
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (2147.1ms)
+Rendered rescues/_request_and_response (34.0ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 08:02:23) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (30.5ms)
+Rendered layouts/_header (133.7ms)
+Rendered layouts/_footer (11.7ms)
+Completed in 1133ms (View: 1052, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 08:04:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (8.5ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (8.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3926.9ms)
+Rendered layouts/_stylesheets (30.9ms)
+Rendered layouts/_header (99.7ms)
+Rendered layouts/_footer (39.3ms)
+Completed in 6226ms (View: 5260, DB: 17) | 200 OK [http://localhost/preview]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 08:05:01) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPage Load (4.7ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 4 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1612.3ms)
+Rendered layouts/_stylesheets (18.0ms)
+Rendered layouts/_header (133.8ms)
+Rendered layouts/_footer (9.9ms)
+Completed in 2849ms (View: 2366, DB: 6) | 200 OK [http://localhost/exposure]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 08:05:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPage Load (2.8ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (24.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 5 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1641.1ms)
+Rendered layouts/_stylesheets (17.9ms)
+Rendered layouts/_header (73.0ms)
+Rendered layouts/_footer (13.5ms)
+Completed in 2572ms (View: 2163, DB: 27) | 200 OK [http://localhost/comprehension]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 08:53:53) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (136.0ms)
+
+ActionView::TemplateError (undefined method `javascript_link_tag' for #<ActionView::Base:0xb6e28cfc>) on line #6 of app/views/layouts/application.html.erb:
+3: 	<head>
+4: 		<title><%= title %></title>
+5: 		<%= render 'layouts/stylesheets.html.erb' %>
+6: 		<%= javascript_link_tag "application", "jquery-1.4.2" %>
+7: 	</head>
+8: 
+9: 	<body>
+
+    app/views/layouts/application.html.erb:6
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (4176.0ms)
+Rendered rescues/_request_and_response (24.0ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:04:01) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (164.0ms)
+Rendered layouts/_footer (84.0ms)
+Completed in 1004ms (View: 900, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-03 09:04:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 09:04:21) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mPage Load (32.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 11) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (8.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 11 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2108.0ms)
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (96.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 4088ms (View: 3220, DB: 40) | 200 OK [http://localhost/evaluation]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-03 09:04:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:07:51) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (20.0ms)
+Rendered layouts/_header (88.0ms)
+Rendered layouts/_footer (8.0ms)
+Completed in 868ms (View: 792, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 09:08:41) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (16.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 4 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1288.0ms)
+Rendered layouts/_stylesheets (8.0ms)
+Rendered layouts/_header (140.0ms)
+Rendered layouts/_footer (60.0ms)
+Completed in 2496ms (View: 1964, DB: 20) | 200 OK [http://localhost/exposure]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:15:24) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (72.0ms)
+Rendered layouts/_header (176.0ms)
+Rendered layouts/_footer (12.0ms)
+Completed in 1260ms (View: 1188, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:23:58) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (32.0ms)
+Rendered layouts/_header (72.0ms)
+Rendered layouts/_footer (8.0ms)
+Completed in 1096ms (View: 904, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:31:59) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (56.0ms)
+Rendered layouts/_header (192.0ms)
+Rendered layouts/_footer (124.0ms)
+Completed in 2212ms (View: 2112, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 09:32:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (4.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 4 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1400.0ms)
+Rendered layouts/_stylesheets (32.0ms)
+Rendered layouts/_header (80.0ms)
+Rendered layouts/_footer (8.0ms)
+Completed in 3192ms (View: 2196, DB: 8) | 200 OK [http://localhost/exposure]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 09:32:29) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (8.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (28.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 6 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1464.0ms)
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (140.0ms)
+Rendered layouts/_footer (8.0ms)
+Completed in 2512ms (View: 2188, DB: 36) | 200 OK [http://localhost/skills]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:43:31) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (56.0ms)
+Rendered layouts/_header (84.0ms)
+Rendered layouts/_footer (12.0ms)
+Completed in 1172ms (View: 1012, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:47:23) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (212.0ms)
+Rendered layouts/_footer (36.0ms)
+Completed in 1296ms (View: 1176, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 09:53:48) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (180.0ms)
+Rendered layouts/_footer (44.0ms)
+Completed in 1660ms (View: 1484, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 09:55:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (48.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (12.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1728.0ms)
+Rendered layouts/_stylesheets (8.0ms)
+Rendered layouts/_header (188.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 2952ms (View: 2292, DB: 60) | 200 OK [http://localhost/preview]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 10:13:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (128.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3076.0ms)
+Rendered layouts/_stylesheets (24.0ms)
+Rendered layouts/_header (244.0ms)
+Rendered layouts/_footer (24.0ms)
+Completed in 5388ms (View: 4600, DB: 132) | 200 OK [http://localhost/preview]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 10:20:48) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (96.0ms)
+Rendered layouts/_footer (16.0ms)
+Completed in 860ms (View: 768, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 10:26:24) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (120.0ms)
+Rendered layouts/_header (256.0ms)
+Rendered layouts/_footer (48.0ms)
+Completed in 1568ms (View: 1496, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 10:27:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (8.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (12.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2552.0ms)
+Rendered layouts/_stylesheets (8.0ms)
+Rendered layouts/_header (84.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 4612ms (View: 3784, DB: 20) | 200 OK [http://localhost/preview]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 10:30:39) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (24.0ms)
+Rendered layouts/_header (56.0ms)
+Rendered layouts/_footer (32.0ms)
+Completed in 940ms (View: 876, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 11:38:14) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (36.0ms)
+Rendered layouts/_header (296.0ms)
+Rendered layouts/_footer (88.0ms)
+Completed in 1788ms (View: 1376, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 11:45:30) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (12.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (0.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 6 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3212.0ms)
+Rendered layouts/_stylesheets (24.0ms)
+Rendered layouts/_header (136.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 5012ms (View: 4292, DB: 12) | 200 OK [http://localhost/skills]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 11:49:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (0.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 6 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1160.0ms)
+Rendered layouts/_stylesheets (4.0ms)
+Rendered layouts/_header (80.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 1960ms (View: 1644, DB: 4) | 200 OK [http://localhost/skills]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 11:57:57) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (128.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 6 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (4392.0ms)
+Rendered layouts/_stylesheets (112.0ms)
+Rendered layouts/_header (168.0ms)
+Rendered layouts/_footer (40.0ms)
+Completed in 8756ms (View: 7276, DB: 132) | 200 OK [http://localhost/skills]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 12:18:35) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (72.0ms)
+Rendered layouts/_footer (48.0ms)
+Completed in 892ms (View: 816, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:19:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (8.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (4.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1416.0ms)
+Rendered layouts/_stylesheets (20.0ms)
+Rendered layouts/_header (48.0ms)
+Rendered layouts/_footer (12.0ms)
+Completed in 3064ms (View: 2024, DB: 12) | 200 OK [http://localhost/preview]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#upload_document (for 127.0.0.1 at 2010-08-03 12:19:59) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"/V9om2jfaRYPYfZ4ADSBbU/Nxc6sOpKIx/qyhACm8zQ=", "document"=>{"uploaded_data"=>#<File:/tmp/RackMultipart1647-0>}}
+  [4;36;1mDocument Create (16.0ms)[0m   [0;1mINSERT INTO "documents" ("size", "created_at", "content_type", "title", "updated_at", "page_id", "parent_id", "filename", "attachable_type", "attachable_id") VALUES(26112, '2010-08-03 19:20:00', 'application/msword', NULL, '2010-08-03 19:20:00', NULL, NULL, 'Blargablargablargblarg.doc', NULL, NULL)[0m
+  [4;35;1mPage Load (4.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) LIMIT 1[0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+  [4;36;1mDocument Update (4.0ms)[0m   [0;1mUPDATE "documents" SET "attachable_id" = 3, "updated_at" = '2010-08-03 19:20:00', "attachable_type" = 'Page' WHERE "id" = 13[0m
+Redirected to http://localhost:3000/pages/3
+Completed in 1928ms (DB: 24) | 302 Found [http://localhost/pages/upload_document]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:20:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPage Load (16.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mDocument Load (20.0ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1356.0ms)
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (76.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 2048ms (View: 1732, DB: 36) | 200 OK [http://localhost/pages/3]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:39:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (32.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 1 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2324.0ms)
+
+ActionView::TemplateError (undefined method `doc_title' for #<Document:0xb6ea04a0>) on line #25 of app/views/pages/show.html.erb:
+22: 
+23: 	<div class="field">
+24: 		<%= f.label "Title (Optional)" %><br />
+25: 		<%= f.text_field :doc_title %>
+26: 	</div>
+27: 	<div class="field">
+28: 		<%= f.label "Upload An Example:" %>
+
+    app/views/pages/show.html.erb:25
+    app/views/pages/show.html.erb:17
+    app/controllers/pages_controller.rb:16:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (2908.0ms)
+Rendered rescues/_request_and_response (36.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100717100929)
+Migrating to CreateDocuments (20100717104540)
+Migrating to RemovePageIdFromDocuments (20100803013135)
+Migrating to AddDocTitleToDocuments (20100803192512)
+  [4;36;1mSQL (8.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (24.0ms)[0m   [0mALTER TABLE "documents" ADD "doc_title" varchar(255)[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100803192512')[0m
+  [4;35;1mSQL (24.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (8.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("documents")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:46:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPage Load (20.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (36.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 1 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2948.0ms)
+Rendered layouts/_stylesheets (64.0ms)
+Rendered layouts/_header (324.0ms)
+Rendered layouts/_footer (24.0ms)
+Completed in 6144ms (View: 4860, DB: 56) | 200 OK [http://localhost/pages/1]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#upload_document (for 127.0.0.1 at 2010-08-03 12:46:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"/V9om2jfaRYPYfZ4ADSBbU/Nxc6sOpKIx/qyhACm8zQ=", "document"=>{"uploaded_data"=>#<File:/tmp/RackMultipart1698-0>, "doc_title"=>"New Document"}}
+  [4;36;1mDocument Create (84.0ms)[0m   [0;1mINSERT INTO "documents" ("size", "created_at", "content_type", "title", "updated_at", "page_id", "parent_id", "filename", "attachable_type", "doc_title", "attachable_id") VALUES(26112, '2010-08-03 19:47:06', 'application/msword', NULL, '2010-08-03 19:47:06', NULL, NULL, 'Blargablargablargblarg.doc', NULL, 'New Document', NULL)[0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) LIMIT 1[0m
+  [4;36;1mDocument Update (0.0ms)[0m   [0;1mUPDATE "documents" SET "attachable_id" = 1, "updated_at" = '2010-08-03 19:47:27', "attachable_type" = 'Page' WHERE "id" = 14[0m
+Redirected to http://localhost:3000/pages/1
+Completed in 33136ms (DB: 84) | 302 Found [http://localhost/pages/upload_document]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:47:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPage Load (4.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mDocument Load (108.0ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents".attachable_id = 1 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (4304.0ms)
+Rendered layouts/_stylesheets (52.0ms)
+Rendered layouts/_header (152.0ms)
+Rendered layouts/_footer (16.0ms)
+Completed in 6828ms (View: 5284, DB: 112) | 200 OK [http://localhost/pages/1]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#upload_document (for 127.0.0.1 at 2010-08-03 12:48:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"/V9om2jfaRYPYfZ4ADSBbU/Nxc6sOpKIx/qyhACm8zQ=", "document"=>{"uploaded_data"=>#<File:/tmp/RackMultipart1698-1>, "doc_title"=>""}}
+  [4;35;1mDocument Create (64.0ms)[0m   [0mINSERT INTO "documents" ("size", "created_at", "content_type", "title", "updated_at", "page_id", "parent_id", "filename", "attachable_type", "doc_title", "attachable_id") VALUES(26112, '2010-08-03 19:48:25', 'application/msword', NULL, '2010-08-03 19:48:25', NULL, NULL, 'Blargablargablargblarg.doc', NULL, '', NULL)[0m
+  [4;36;1mPage Load (48.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) LIMIT 1[0m
+  [4;35;1mDocument Update (4.0ms)[0m   [0mUPDATE "documents" SET "attachable_id" = 1, "updated_at" = '2010-08-03 19:49:26', "attachable_type" = 'Page' WHERE "id" = 15[0m
+Redirected to http://localhost:3000/pages/1
+Completed in 67328ms (DB: 116) | 302 Found [http://localhost/pages/upload_document]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:49:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (60.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 1 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1820.0ms)
+Rendered layouts/_stylesheets (16.0ms)
+Rendered layouts/_header (88.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 2572ms (View: 2132, DB: 64) | 200 OK [http://localhost/pages/1]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 12:52:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPage Load (4.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (120.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 1 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2072.0ms)
+Rendered layouts/_stylesheets (28.0ms)
+Rendered layouts/_header (96.0ms)
+Rendered layouts/_footer (8.0ms)
+Completed in 3372ms (View: 2936, DB: 124) | 200 OK [http://localhost/pages/1]
