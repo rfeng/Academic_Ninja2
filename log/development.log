@@ -7521,3 +7521,383 @@ Rendered layouts/_stylesheets (33.0ms)
 Rendered layouts/_header (21.2ms)
 Rendered layouts/_footer (20.8ms)
 Completed in 4434ms (View: 3720, DB: 10) | 200 OK [http://localhost/pages/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 06:13:59) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (29.3ms)
+Rendered layouts/_header (37.5ms)
+Rendered layouts/_footer (11.2ms)
+Completed in 1043ms (View: 963, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#contact (for 127.0.0.1 at 2010-08-03 06:14:10) [GET]
+Rendering template within layouts/application
+Rendering static_pages/contact
+Rendered layouts/_stylesheets (5.6ms)
+Rendered layouts/_header (6.4ms)
+Rendered layouts/_footer (10.4ms)
+Completed in 343ms (View: 282, DB: 0) | 200 OK [http://localhost/contact]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-03 06:17:45) [GET]
+  [4;36;1mPage Load (70.5ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_stylesheets (56.9ms)
+Rendered layouts/_header (71.4ms)
+Rendered layouts/_footer (50.7ms)
+Completed in 3767ms (View: 2712, DB: 71) | 200 OK [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:17:59) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (51.5ms)
+Rendered layouts/_header (75.2ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 2999ms (View: 915, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:18:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Preview activities are designed to give students a chance to gain familiarity with the information they are about to learn. Controlled studies have shown that students that preview what they will learn are more likely to pay attention, feel a sense of purpose, and remember what they learn. Surveys show that the best college students generally preview texts before they set out to learn something.", "title"=>"Preview"}}
+  [4;35;1mPage Create (11.4ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:18:30', 'Preview', 'Preview activities are designed to give students a chance to gain familiarity with the information they are about to learn. Controlled studies have shown that students that preview what they will learn are more likely to pay attention, feel a sense of purpose, and remember what they learn. Surveys show that the best college students generally preview texts before they set out to learn something.', '2010-08-03 13:18:30')[0m
+Redirected to http://localhost:3000/pages/3
+Completed in 759ms (DB: 11) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:18:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPage Load (13.1ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (4.7ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 3 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2080.1ms)
+Rendered layouts/_stylesheets (14.5ms)
+Rendered layouts/_header (7.0ms)
+Rendered layouts/_footer (2.6ms)
+Completed in 3125ms (View: 2722, DB: 18) | 200 OK [http://localhost/pages/3]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-03 06:18:48) [GET]
+  [4;36;1mPage Load (11.9ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_stylesheets (23.2ms)
+Rendered layouts/_header (26.8ms)
+Rendered layouts/_footer (22.6ms)
+Completed in 850ms (View: 608, DB: 12) | 200 OK [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:18:55) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (45.4ms)
+Rendered layouts/_header (34.6ms)
+Rendered layouts/_footer (46.3ms)
+Completed in 1782ms (View: 813, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:19:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Exposure activities are typically referred to as notes. However, there are many types of note taking strategies. Notes are the most basic study tool in post-secondary education. Controlled studies have shown that writing information increases the probability of recall. Surveys show that the best college students all take notes and use them as a study tool.", "title"=>"Exposure"}}
+  [4;35;1mPage Create (9.9ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:19:15', 'Exposure', 'Exposure activities are typically referred to as notes. However, there are many types of note taking strategies. Notes are the most basic study tool in post-secondary education. Controlled studies have shown that writing information increases the probability of recall. Surveys show that the best college students all take notes and use them as a study tool.', '2010-08-03 13:19:15')[0m
+Redirected to http://localhost:3000/pages/4
+Completed in 349ms (DB: 10) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:19:17) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPage Load (3.7ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (6.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 4 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1149.1ms)
+Rendered layouts/_stylesheets (7.6ms)
+Rendered layouts/_header (15.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 1817ms (View: 1516, DB: 11) | 200 OK [http://localhost/pages/4]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-03 06:19:26) [GET]
+  [4;36;1mPage Load (41.3ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_stylesheets (16.7ms)
+Rendered layouts/_header (72.5ms)
+Rendered layouts/_footer (3.7ms)
+Completed in 1385ms (View: 1063, DB: 41) | 200 OK [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:19:44) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (18.2ms)
+Rendered layouts/_header (21.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 710ms (View: 380, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:19:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Comprehension activities are designed to force students to think about information. They hold students accountable for being able to rephrase and reorganize the information they are committing to memory. It is universally acknowledged that comprehension is a necessary step to new ways of understanding and creating.", "title"=>"Comprehension"}}
+  [4;35;1mPage Create (36.7ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:19:57', 'Comprehension', 'Comprehension activities are designed to force students to think about information. They hold students accountable for being able to rephrase and reorganize the information they are committing to memory. It is universally acknowledged that comprehension is a necessary step to new ways of understanding and creating.', '2010-08-03 13:19:57')[0m
+Redirected to http://localhost:3000/pages/5
+Completed in 956ms (DB: 37) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:20:00) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPage Load (2.8ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (1.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 5 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1442.7ms)
+Rendered layouts/_stylesheets (55.9ms)
+Rendered layouts/_header (24.9ms)
+Rendered layouts/_footer (34.6ms)
+Completed in 2331ms (View: 2008, DB: 4) | 200 OK [http://localhost/pages/5]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:20:08) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (21.2ms)
+Rendered layouts/_header (23.9ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 1441ms (View: 619, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:20:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Skills Development activities allow students to use information to practice their communication skills, particularly writing. Studies in education show that a surprising number of college freshmen are unable to write effectively, so much so that it is the general complaint of college professors teaching lower-level courses. It is my obligation to reinforce learning in the language arts by requiring a language development activity.", "title"=>"Skills Development"}}
+  [4;36;1mPage Create (15.6ms)[0m   [0;1mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:20:39', 'Skills Development', 'Skills Development activities allow students to use information to practice their communication skills, particularly writing. Studies in education show that a surprising number of college freshmen are unable to write effectively, so much so that it is the general complaint of college professors teaching lower-level courses. It is my obligation to reinforce learning in the language arts by requiring a language development activity.', '2010-08-03 13:20:39')[0m
+Redirected to http://localhost:3000/pages/6
+Completed in 1294ms (DB: 16) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:20:41) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (29.4ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mDocument Load (22.7ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents".attachable_id = 6 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3677.2ms)
+Rendered layouts/_stylesheets (19.7ms)
+Rendered layouts/_header (5.4ms)
+Rendered layouts/_footer (3.6ms)
+Completed in 5118ms (View: 4234, DB: 52) | 200 OK [http://localhost/pages/6]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:21:00) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (23.0ms)
+Rendered layouts/_header (18.9ms)
+Rendered layouts/_footer (2.5ms)
+Completed in 601ms (View: 261, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:21:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Enrichment activities allow students to get similar information from a different perspective and a new media. It allows students to compare the new presentation form to both the information and the presentation of the original. College courses are usually designed around primary texts and a lecture series but there are almost always other texts, articles, documentaries or other enrichment materials.", "title"=>"Enrichment"}}
+  [4;35;1mPage Create (7.9ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:21:11', 'Enrichment', 'Enrichment activities allow students to get similar information from a different perspective and a new media. It allows students to compare the new presentation form to both the information and the presentation of the original. College courses are usually designed around primary texts and a lecture series but there are almost always other texts, articles, documentaries or other enrichment materials.', '2010-08-03 13:21:11')[0m
+Redirected to http://localhost:3000/pages/7
+Completed in 802ms (DB: 8) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:21:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (31.7ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (6.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 7 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2896.2ms)
+Rendered layouts/_stylesheets (32.1ms)
+Rendered layouts/_header (48.4ms)
+Rendered layouts/_footer (8.2ms)
+Completed in 4438ms (View: 3560, DB: 38) | 200 OK [http://localhost/pages/7]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:21:34) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (37.5ms)
+Rendered layouts/_header (18.6ms)
+Rendered layouts/_footer (14.4ms)
+Completed in 813ms (View: 404, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:21:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Analysis activities allow students to break apart information into its various components and see how those components relate to the broader whole. It is universally acknowledged that analysis is a necessary step to new ways of understanding and creating.", "title"=>"Analysis"}}
+  [4;36;1mPage Create (13.9ms)[0m   [0;1mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:21:44', 'Analysis', 'Analysis activities allow students to break apart information into its various components and see how those components relate to the broader whole. It is universally acknowledged that analysis is a necessary step to new ways of understanding and creating.', '2010-08-03 13:21:44')[0m
+Redirected to http://localhost:3000/pages/8
+Completed in 607ms (DB: 14) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:21:45) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPage Load (3.1ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mDocument Load (3.1ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents".attachable_id = 8 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (1252.0ms)
+Rendered layouts/_stylesheets (9.2ms)
+Rendered layouts/_header (7.3ms)
+Rendered layouts/_footer (12.7ms)
+Completed in 2503ms (View: 1512, DB: 6) | 200 OK [http://localhost/pages/8]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:22:15) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (14.5ms)
+Rendered layouts/_header (4.9ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 773ms (View: 298, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:22:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Synthesis activities allow students to use information in new and creative ways. Controlled research shows that when students use information for a creative project of their own retention increases to nearly 100%. Surveys show that motivation increases if students feel a sense of ownership over their work and if they feel that their work has an effect on other students.", "title"=>"Synthesis"}}
+  [4;35;1mPage Create (18.6ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:22:25', 'Synthesis', 'Synthesis activities allow students to use information in new and creative ways. Controlled research shows that when students use information for a creative project of their own retention increases to nearly 100%. Surveys show that motivation increases if students feel a sense of ownership over their work and if they feel that their work has an effect on other students.', '2010-08-03 13:22:25')[0m
+Redirected to http://localhost:3000/pages/9
+Completed in 842ms (DB: 19) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:22:28) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPage Load (50.1ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 9) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (1.7ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 9 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3346.7ms)
+Rendered layouts/_stylesheets (34.1ms)
+Rendered layouts/_header (78.7ms)
+Rendered layouts/_footer (42.8ms)
+Completed in 5351ms (View: 4462, DB: 52) | 200 OK [http://localhost/pages/9]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:22:45) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (13.6ms)
+Rendered layouts/_header (20.5ms)
+Rendered layouts/_footer (2.2ms)
+Completed in 1046ms (View: 327, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:22:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Self-Assessment activities allow students to identify what they know comfortably and what still needs to be learned. Surveys show that the best college students have and use strategies to identify what they know so they can target study time on what remains to be learned.", "title"=>"Self-Assessment"}}
+  [4;36;1mPage Create (38.7ms)[0m   [0;1mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:22:59', 'Self-Assessment', 'Self-Assessment activities allow students to identify what they know comfortably and what still needs to be learned. Surveys show that the best college students have and use strategies to identify what they know so they can target study time on what remains to be learned.', '2010-08-03 13:22:59')[0m
+Redirected to http://localhost:3000/pages/10
+Completed in 1387ms (DB: 39) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:23:02) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPage Load (35.2ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 10) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mDocument Load (34.4ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents".attachable_id = 10 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (3097.0ms)
+Rendered layouts/_stylesheets (20.6ms)
+Rendered layouts/_header (12.0ms)
+Rendered layouts/_footer (27.3ms)
+Completed in 5233ms (View: 4154, DB: 70) | 200 OK [http://localhost/pages/10]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-08-03 06:23:16) [GET]
+Rendering template within layouts/application
+Rendering pages/new
+Rendered layouts/_stylesheets (10.5ms)
+Rendered layouts/_header (147.0ms)
+Rendered layouts/_footer (94.4ms)
+Completed in 1345ms (View: 895, DB: 0) | 200 OK [http://localhost/pages/new]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-08-03 06:23:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aGBTMSEOcv8g1roiza+4glAuLLySDnbuT/eQh/Ztsm8=", "page"=>{"body"=>"Evaluation activities allow students to assign personal meaning to the information they have already learned. Educational research is flooded with talk about assuring that students don’t just learn and memorize but internalize and truly understand not only what the information means to themselves and the world, but also what they can do with that information. Evaluation is an opportunity to assign such a meaning.", "title"=>"Evaluation"}}
+  [4;35;1mPage Create (5.9ms)[0m   [0mINSERT INTO "pages" ("created_at", "title", "body", "updated_at") VALUES('2010-08-03 13:23:29', 'Evaluation', 'Evaluation activities allow students to assign personal meaning to the information they have already learned. Educational research is flooded with talk about assuring that students don’t just learn and memorize but internalize and truly understand not only what the information means to themselves and the world, but also what they can do with that information. Evaluation is an opportunity to assign such a meaning.', '2010-08-03 13:23:29')[0m
+Redirected to http://localhost:3000/pages/11
+Completed in 642ms (DB: 6) | 302 Found [http://localhost/pages]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-08-03 06:23:31) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mPage Load (2.9ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 11) [0m
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mDocument Load (2.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents".attachable_id = 11 AND "documents".attachable_type = 'Page') [0m
+Rendered documents/_document (2727.6ms)
+Rendered layouts/_stylesheets (19.9ms)
+Rendered layouts/_header (16.9ms)
+Rendered layouts/_footer (4.4ms)
+Completed in 3708ms (View: 3284, DB: 5) | 200 OK [http://localhost/pages/11]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StaticPagesController#home (for 127.0.0.1 at 2010-08-03 06:23:41) [GET]
+Rendering template within layouts/application
+Rendering static_pages/home
+Rendered layouts/_stylesheets (6.4ms)
+Rendered layouts/_header (25.1ms)
+Rendered layouts/_footer (2.1ms)
+Completed in 419ms (View: 293, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-03 06:23:49) [GET]
+  [4;36;1mPage Load (21.8ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Rendered layouts/_stylesheets (18.1ms)
+Rendered layouts/_header (9.0ms)
+Rendered layouts/_footer (3.8ms)
+Completed in 2372ms (View: 2143, DB: 22) | 200 OK [http://localhost/pages]

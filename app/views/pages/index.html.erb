@@ -8,7 +8,7 @@
 
 <% for page in @pages %>
   <tr>
-    <td><%=h page.title %></td>
+    <td><%= link_to <%=h page.title %>, page %></td>
     <td><%=h page.body %></td>
     <td><%= link_to 'Show', page %></td>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
