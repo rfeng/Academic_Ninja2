@@ -1,0 +1,33 @@
+<p>
+  <b>Title:</b>
+  <%=h @page.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @page.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
+
+
+
+<%= render 'documents/document.html.erb'  %>
+
+<% form_for(:document, Document.new,
+		:url => { :controller => 'pages', 
+	  		  :action => 'upload_document' },
+		:html => { :multipart => true }) do |f| %>
+	<%= f.error_messages %>
+
+	<div class="field">
+		<%= f.label "Upload An Example:" %>
+		<%= f.file_field :uploaded_data %>
+	</div>
+	<div class="field">
+		<%= submit_tag 'Create' %>
+	</div>
+<% end %>
+

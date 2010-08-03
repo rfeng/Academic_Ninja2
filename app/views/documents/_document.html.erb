@@ -1,0 +1,7 @@
+<h2>Examples</h2>
+
+<% @page.documents.each do |doc| %>
+	<%= link_to doc.filename, doc.public_filename, :target => '_blank' %><br />
+<% end %>
+
+<br />
